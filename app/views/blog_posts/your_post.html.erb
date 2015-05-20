@@ -1,14 +1,9 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Blog Posts</h1>
-Welcome <%= current_user.email %>!
 <div class="row">
 <% @blog_posts.each do |blog_post| %>
 <div class="col-md-6">
     <div class="panel-body">
   by <%= blog_post.user.email %>
     </div>
-    
     <div class="panel-body">
    by <strong><%= blog_post.user.username %></strong>
 <div class="panel panel-default">
@@ -31,3 +26,5 @@ Welcome <%= current_user.email %>!
 <br>
 
 <%= link_to 'New Blog post', new_blog_post_path %>
+
+                                                 
